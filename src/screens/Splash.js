@@ -18,7 +18,6 @@ export default function Splash({ navigation }) {
                 hidden={true}
             />
             <View>
-                {/* img */}
                 <Image
                     source={require('../assets/imgs/splash.png')}
                     style={styles.bgImg}
