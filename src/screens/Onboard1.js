@@ -36,7 +36,9 @@ export default function Onboard1({ navigation }) {
                         <Text style={styles.subText}>
                             Already have an account?
                         </Text>
-                        <TouchableOpacity>
+                        <TouchableOpacity
+                            onPress={() => navigation.navigate('Login')}
+                        >
                             <Text style={styles.subTextClickable}>Login</Text>
                         </TouchableOpacity>
                     </View>

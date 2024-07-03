@@ -1,15 +1,30 @@
 import { StyleSheet } from 'react-native';
+import { acolors } from '../constants/colors';
 
 const globalStyles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
     },
-    text: {
-        fontSize: 18,
-        color: '#333',
+    bgContainer: {
+        backgroundColor: 'white',
+        width: '100%',
+        minHeight: '100%',
+        padding: 20,
     },
+    heading1: {
+        fontFamily: 'Gilroy-Black',
+        color: acolors.primary,
+        fontSize: 26,
+        marginBottom: 20,
+    },
+    subHeading1: {
+        fontFamily: 'Gilroy-Black',
+        fontSize: 14,
+        color: acolors.black,
+    }
+
 });
 
 export default globalStyles;

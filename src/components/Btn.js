@@ -2,10 +2,10 @@ import React from 'react'
 import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 import { acolors } from '../constants/colors'
 
-export default Btn = ({ onPress, children }) => {
+export default Btn = ({ onPress, children, style }) => {
     return (
         <TouchableOpacity
-            style={[styles.tipsBtn]}
+            style={[styles.tipsBtn, { ...style }]}
             onPress={onPress}
         >
             <Text style={styles.topsBtnTitle}>{children}</Text>

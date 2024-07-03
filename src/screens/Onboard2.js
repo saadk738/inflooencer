@@ -1,11 +1,11 @@
-import { View, Text, Image, StyleSheet, SafeAreaView, StatusBar, ImageBackground, TouchableOpacity, Alert } from 'react-native'
+import { View, Text, Image, StyleSheet, SafeAreaView, StatusBar, ImageBackground, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Btn from '../components/Btn'
 import globalStyles from '../styles/globalStyles'
 import { acolors } from '../constants/colors'
 import IconBtn from '../components/IconBtn'
 
-export default function Onboard2() {
+export default function Onboard2({ navigation }) {
     return (
         <SafeAreaView>
             <StatusBar
@@ -52,14 +52,19 @@ export default function Onboard2() {
                         >
                             Continue with Instagram
                         </IconBtn>
+
+                        {/* bottom text  */}
                         <View style={styles.bottomTextBox}>
                             <Text style={styles.subText}>
                                 Already have an account?
                             </Text>
-                            <TouchableOpacity>
+                            <TouchableOpacity
+                                onPress={() => navigation.navigate('Login')}
+                            >
                                 <Text style={styles.subTextClickable}>Login</Text>
                             </TouchableOpacity>
                         </View>
+
                     </View>
                 </View>
             </ImageBackground>
