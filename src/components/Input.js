@@ -13,11 +13,20 @@ export default function Input({
     onChangeText,
     onBlur,
     icon,
-    containerStyle
+    containerStyle,
+    iconStyle,
+    iconLeft,
+
 }) {
 
     return (
         <View style={[styles.container, { ...containerStyle }]}>
+            {iconLeft ?
+                <Image
+                    source={iconLeft}
+                    style={styles.iconLeftStyle}
+                />
+                : null}
             <TextInput
                 editable={editable}
                 multiline={multiline}
@@ -41,7 +50,7 @@ export default function Input({
             {icon ? <TouchableOpacity>
                 <Image
                     source={icon}
-                    style={styles.img}
+                    style={iconStyle ?? styles.img}
                 />
             </TouchableOpacity> : null}
 
@@ -62,6 +71,11 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         width: '100%',
+    },
+    iconLeftStyle: {
+        width: 18,
+        height: 18,
+        marginEnd: 5,
     },
     img: {
         width: 12,

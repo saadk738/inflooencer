@@ -1,11 +1,10 @@
-import { View, Text, ScrollView, StyleSheet, SafeAreaView, Image, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, SafeAreaView, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Btn from '../components/Btn'
 import globalStyles from '../styles/globalStyles'
 import Input from '../components/Input'
 import { acolors } from '../constants/colors'
-import PhoneInput from '../components/PhoneInput'
-import PhoneInput1 from '../components/PhoneInput'
+
 
 export default function SignUpStep4({ navigation }) {
     return (
@@ -15,7 +14,7 @@ export default function SignUpStep4({ navigation }) {
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <Image
                             source={require('../assets/imgs/backIcon.png')}
-                            style={styles.backIcon}
+                            style={globalStyles.backIcon}
                         />
                     </TouchableOpacity>
 
@@ -69,11 +68,6 @@ export default function SignUpStep4({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         justifyContent: 'space-between'
-    },
-    backIcon: {
-        width: 40,
-        height: 40,
-        marginVertical: 30,
     },
     dobBox: {
         flexDirection: 'row',

@@ -15,7 +15,7 @@ export default function SignUpStep1({ navigation }) {
                     >
                         <Image
                             source={require('../assets/imgs/backIcon.png')}
-                            style={styles.backIcon}
+                            style={globalStyles.backIcon}
                         />
                     </TouchableOpacity>
 
@@ -88,11 +88,6 @@ export default function SignUpStep1({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         justifyContent: 'space-between'
-    },
-    backIcon: {
-        width: 40,
-        height: 40,
-        marginVertical: 30,
     },
     dobBox: {
         flexDirection: 'row',

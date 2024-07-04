@@ -13,6 +13,11 @@ const globalStyles = StyleSheet.create({
         minHeight: '100%',
         padding: 20,
     },
+    backIcon: {
+        width: 40,
+        height: 40,
+        marginBottom: 20,
+    },
     heading1: {
         fontFamily: 'Gilroy-Black',
         color: acolors.primary,
@@ -23,7 +28,8 @@ const globalStyles = StyleSheet.create({
         fontFamily: 'Gilroy-Black',
         fontSize: 14,
         color: acolors.black,
-    }
+    },
+
 
 });
 

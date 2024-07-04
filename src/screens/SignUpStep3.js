@@ -1,8 +1,7 @@
-import { View, Text, ScrollView, StyleSheet, SafeAreaView, Image, TouchableOpacity, Button } from 'react-native'
+import { View, Text, StyleSheet, SafeAreaView, Image, TouchableOpacity } from 'react-native'
 import React, { useRef } from 'react'
 import Btn from '../components/Btn'
 import globalStyles from '../styles/globalStyles'
-import Input from '../components/Input'
 import { acolors } from '../constants/colors'
 import OTPTextView from 'react-native-otp-textinput'
 
@@ -25,7 +24,7 @@ export default function SignUpStep3({ navigation }) {
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <Image
                             source={require('../assets/imgs/backIcon.png')}
-                            style={styles.backIcon}
+                            style={globalStyles.backIcon}
                         />
                     </TouchableOpacity>
 
@@ -44,6 +43,15 @@ export default function SignUpStep3({ navigation }) {
                         handleCellTextChange={(e) => console.log(e)}
                         tintColor={acolors.primary}
                         offTintColor='#929292'
+                        containerStyle={{ width: '100%' }}
+                        textInputStyle={{
+                            flex: 1,
+                            backgroundColor: acolors.primary,
+                            color: 'white',
+                            fontFamily: 'Gilroy-Black',
+                            borderTopLeftRadius: 15,
+                            borderTopRightRadius: 15,
+                        }}
                     />
 
                     <Text style={styles.resendStyle}>
@@ -80,11 +88,6 @@ export default function SignUpStep3({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         justifyContent: 'space-between'
-    },
-    backIcon: {
-        width: 40,
-        height: 40,
-        marginVertical: 30,
     },
     dobBox: {
         flexDirection: 'row',

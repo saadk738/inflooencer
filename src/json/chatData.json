@@ -1,0 +1,121 @@
+[
+    {
+        "_id": "60d21b4677d67e0015e0b01",
+        "sender": "Cavil Nice",
+        "receiver": "Daniel Cavil",
+        "message": "Hey",
+        "timestamp": "2024-07-04T10:02:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b01e",
+        "sender": "Daniel Cavil",
+        "receiver": "Cavil Nice",
+        "message": "Hello, Good Afternoon",
+        "timestamp": "2024-07-04T10:00:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b01f",
+        "sender": "Cavil Nice",
+        "receiver": "Daniel Cavil",
+        "message": "Hello, Good afternoon",
+        "timestamp": "2024-07-04T10:02:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b020",
+        "sender": "Daniel Cavil",
+        "receiver": "Cavil Nice",
+        "message": "How was your weekend?",
+        "timestamp": "2024-07-04T10:03:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b021",
+        "sender": "Cavil Nice",
+        "receiver": "Daniel Cavil",
+        "message": "It was great, thanks! How about yours?",
+        "timestamp": "2024-07-04T10:05:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b022",
+        "sender": "Daniel Cavil",
+        "receiver": "Cavil Nice",
+        "message": "Mine was relaxing. Did you do anything special?",
+        "timestamp": "2024-07-04T10:07:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b023",
+        "sender": "Cavil Nice",
+        "receiver": "Daniel Cavil",
+        "message": "Just spent time with family. How about you?",
+        "timestamp": "2024-07-04T10:10:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b024",
+        "sender": "Daniel Cavil",
+        "receiver": "Cavil Nice",
+        "message": "Hmmm, I went on hiking. I enjoyed a lot. It was a great adventure!",
+        "timestamp": "2024-07-04T10:12:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b025",
+        "sender": "Cavil Nice",
+        "receiver": "Daniel Cavil",
+        "message": "That sounds fun! Where did you go?",
+        "timestamp": "2024-07-04T10:14:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b026",
+        "sender": "Daniel Cavil",
+        "receiver": "Cavil Nice",
+        "message": "We went to the Blue Ridge Mountains. The view was breathtaking!",
+        "timestamp": "2024-07-04T10:16:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b027",
+        "sender": "Cavil Nice",
+        "receiver": "Daniel Cavil",
+        "message": "I’ve always wanted to go there. Did you take any pictures?",
+        "timestamp": "2024-07-04T10:18:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b028",
+        "sender": "Daniel Cavil",
+        "receiver": "Cavil Nice",
+        "message": "Yes, a lot! I'll share some with you later.",
+        "timestamp": "2024-07-04T10:20:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b029",
+        "sender": "Cavil Nice",
+        "receiver": "Daniel Cavil",
+        "message": "Looking forward to it! Did you camp there as well?",
+        "timestamp": "2024-07-04T10:22:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b02a",
+        "sender": "Daniel Cavil",
+        "receiver": "Cavil Nice",
+        "message": "No, we stayed in a cabin nearby. It was cozy.",
+        "timestamp": "2024-07-04T10:24:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b02b",
+        "sender": "Cavil Nice",
+        "receiver": "Daniel Cavil",
+        "message": "That sounds perfect. I might plan a trip there soon.",
+        "timestamp": "2024-07-04T10:26:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b02c",
+        "sender": "Daniel Cavil",
+        "receiver": "Cavil Nice",
+        "message": "You should! Let me know if you need any tips.",
+        "timestamp": "2024-07-04T10:28:00Z"
+    },
+    {
+        "_id": "60d21b4677d67e0015e0b02d",
+        "sender": "Cavil Nice",
+        "receiver": "Daniel Cavil",
+        "message": "Will do! Thanks a lot, Daniel.",
+        "timestamp": "2024-07-04T10:30:00Z"
+    }
+]
