@@ -10,6 +10,7 @@ export default function Input({
     style,
     editable,
     secure,
+    onSecure,
     onChangeText,
     onBlur,
     icon,
@@ -47,7 +48,9 @@ export default function Input({
                     ...style,
                 }}
             />
-            {icon ? <TouchableOpacity>
+            {icon ? <TouchableOpacity
+                onPress={onSecure}
+            >
                 <Image
                     source={icon}
                     style={iconStyle ?? styles.img}

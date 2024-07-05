@@ -4,15 +4,15 @@ import LinearGradient from 'react-native-linear-gradient';
 import { acolors } from '../constants/colors';
 
 const users = [
-    { id: '1', name: 'Your Story', image: require('../assets/imgs/p1.png'), live: false },
-    { id: '2', name: 'Alex Doe', image: require('../assets/imgs/p2.png'), live: true },
-    { id: '3', name: 'Deni Doe', image: require('../assets/imgs/p3.png'), live: false },
-    { id: '4', name: 'Ricky Doe', image: require('../assets/imgs/p4.png'), live: false },
-    { id: '5', name: 'Olive Doe', image: require('../assets/imgs/p1.png'), live: false },
-    { id: '6', name: 'Martin Doe', image: require('../assets/imgs/p2.png'), live: false },
-    { id: '7', name: 'Your Story', image: require('../assets/imgs/p1.png'), live: false },
-    { id: '8', name: 'Deni Doe', image: require('../assets/imgs/p3.png'), live: false },
-    { id: '9', name: 'Ricky Doe', image: require('../assets/imgs/p4.png'), live: false },
+    { id: '1', name: 'Your Story', image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVX1ID3qi0xYJ249oZ6pxHjeX2jiLdSu2bXQ&s", live: false },
+    { id: '2', name: 'Alex Doe', image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYH_VDaGfxQ_cPhkgDPyoxXJgnnKHzEw7kdg&s", live: true },
+    { id: '3', name: 'Deni Doe', image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0t19r_QBvdPRTO6hqntBjhpdTR73OSp936A&s", live: false },
+    { id: '4', name: 'Ricky Doe', image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNoUWoTYqtPDYWB3r5GB28nI1QoL6POkekA&s", live: false },
+    { id: '5', name: 'Olive Doe', image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVX1ID3qi0xYJ249oZ6pxHjeX2jiLdSu2bXQ&s", live: false },
+    { id: '6', name: 'Martin Doe', image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYH_VDaGfxQ_cPhkgDPyoxXJgnnKHzEw7kdg&s", live: false },
+    { id: '7', name: 'John Doe', image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVX1ID3qi0xYJ249oZ6pxHjeX2jiLdSu2bXQ&s", live: false },
+    { id: '8', name: 'Deni Doe', image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0t19r_QBvdPRTO6hqntBjhpdTR73OSp936A&s", live: false },
+    { id: '9', name: 'Ricky Doe', image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNoUWoTYqtPDYWB3r5GB28nI1QoL6POkekA&s", live: false },
 ];
 
 export default function Home({ navigation }) {
@@ -20,12 +20,13 @@ export default function Home({ navigation }) {
     const renderItem = ({ item }) => (
         <View style={styles.story}>
             <LinearGradient
-                colors={item.live ? ['#ff5f6d', '#ffc371'] : ['#fff', '#fff']}
+                colors={item.name == 'Your Story' ? ['white', 'white'] : item.live ? ['red', 'red'] : ['#FFB400', '#000000']}
                 style={styles.storyBorder}
             >
-                <Image source={item.image} style={styles.storyImage} />
+                <Image source={{ uri: item.image }} style={item.name == 'Your Story' ? styles.yourImage : styles.storyImage} />
             </LinearGradient>
             {item.live && <Text style={styles.liveText}>Live</Text>}
+            {item.name == 'Your Story' && <Text style={styles.plusText}>+</Text>}
             <Text style={styles.storyText}>{item.name}</Text>
         </View>
     );
@@ -74,6 +75,15 @@ export default function Home({ navigation }) {
                     showsHorizontalScrollIndicator={false}
                     style={styles.storiesContainer}
                 />
+                <View style={styles.homeTabBox} >
+                    <TouchableOpacity style={styles.homeTab}>
+                        <Text style={styles.homeTabText}>Home</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.homeTab}>
+                        <Text style={styles.homeTabText}>Reels</Text>
+                    </TouchableOpacity>
+
+                </View>
 
             </ScrollView>
         </SafeAreaView>
@@ -125,17 +135,19 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 20,
         backgroundColor: 'white',
+        marginRight: 5,
     },
     story: {
         alignItems: 'center',
         marginRight: 20,
     },
     storyBorder: {
-        width: 50,
-        height: 50,
-        borderRadius: 25,
+        width: 54,
+        height: 54,
+        borderRadius: 27,
         alignItems: 'center',
         justifyContent: 'center',
+
     },
     storyImage: {
         width: 50,
@@ -143,8 +155,15 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         borderWidth: 2,
         borderColor: 'white',
-        borderColor: 'red',
+        borderWidth: 4,
+    },
+    yourImage: {
+        width: 56,
+        height: 56,
+        borderRadius: 28,
         borderWidth: 2,
+        borderColor: 'white',
+        borderWidth: 4,
     },
     storyText: {
         marginTop: 5,
@@ -154,8 +173,8 @@ const styles = StyleSheet.create({
     },
     liveText: {
         position: 'absolute',
-        top: 5,
-        left: 5,
+        bottom: 17,
+        left: 13,
         backgroundColor: 'red',
         color: 'white',
         paddingHorizontal: 5,
@@ -163,4 +182,28 @@ const styles = StyleSheet.create({
         fontSize: 12,
         fontFamily: 'Gilroy-Bold',
     },
+    plusText: {
+        width: 16,
+        height: 16,
+        position: 'absolute',
+        bottom: 25,
+        left: 45,
+        backgroundColor: acolors.primary,
+        color: 'white',
+        paddingHorizontal: 5,
+        borderRadius: 20,
+        fontSize: 12,
+        fontFamily: 'Gilroy-Bold',
+    },
+    homeTabBox: {
+        paddingHorizontal: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        gap: 50,
+        backgroundColor: 'white',
+        paddingTop: 20,
+    },
+    homeTabTextActive: {
+
+    }
 });

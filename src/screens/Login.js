@@ -1,11 +1,12 @@
 import { View, Text, ScrollView, StyleSheet, SafeAreaView, Image, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import Btn from '../components/Btn'
 import globalStyles from '../styles/globalStyles'
 import Input from '../components/Input'
 import { acolors } from '../constants/colors'
 
 export default function Login({ navigation }) {
+    [secure, setSecure] = useState(true);
     return (
         <SafeAreaView>
             <ScrollView style={globalStyles.bgContainer} >
@@ -27,7 +28,10 @@ export default function Login({ navigation }) {
                 />
                 <Input
                     placeHolder='Password'
+                    secure={secure}
+                    onSecure={() => setSecure(!secure)}
                     icon={require('../assets/imgs/visibility.png')}
+
                 />
 
                 {/* Forget Password */}
