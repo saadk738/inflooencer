@@ -38,7 +38,7 @@ export default function SignUpStep2({ navigation }) {
 
 
                 <View >
-                    <Btn onPress={() => navigation.navigate('SignUpStep3')} >Next</Btn>
+                    <Btn onPress={() => navigation.navigate('SignUpStep3')} >Verify Email</Btn>
                     {/* bottom text  */}
                     <View style={styles.bottomTextBox}>
                         <Text style={styles.subText}>
