@@ -46,7 +46,7 @@ export default function SignUpStep4({ navigation }) {
 
                     <Text style={[styles.text, { marginTop: 10 }]} >To create a strong password</Text>
                     <Text style={[styles.text, { marginLeft: 15 }]}>1.  Use at least 12 characters.</Text>
-                    <Text style={[styles.text, { marginLeft: 15 }]} >2.  Mix uppercase and lowercase letters, numbers, and symbols.</Text>
+                    <Text style={[styles.text, { marginLeft: 15 }]} >2.  Use uppercase and lowercase letters, numbers, and symbols.</Text>
 
 
 
@@ -55,7 +55,7 @@ export default function SignUpStep4({ navigation }) {
 
                 <View >
                     <Btn
-                        onPress={() => navigation.navigate('Home')}
+                        onPress={() => navigation.navigate('MyTabs')}
                     >Register</Btn>
                     {/* bottom text  */}
                     <View style={styles.bottomTextBox}>

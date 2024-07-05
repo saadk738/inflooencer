@@ -43,7 +43,7 @@ export default function Login({ navigation }) {
 
 
                 <Btn
-                    onPress={() => navigation.navigate('Home')}
+                    onPress={() => navigation.navigate('MyTabs')}
                     style={{ marginVertical: 30 }}
                 >Next</Btn>
 

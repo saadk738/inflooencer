@@ -1,4 +1,3 @@
-import { View, Text, SafeAreaView } from 'react-native'
 import React from 'react'
 import Splash from './src/screens/Splash'
 import Onboard1 from './src/screens/Onboard1'
@@ -14,6 +13,7 @@ import Notifications from './src/screens/Notifications'
 import MessagingSearch from './src/screens/MessagingSearch'
 import Messaging from './src/screens/Messaging'
 import Home from './src/screens/Home'
+import MyTabs from './src/navigation/MyTabs'
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -25,8 +25,6 @@ export default function App() {
         }}
       >
         <Stack.Screen name="Splash" component={Splash} />
-
-        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Messaging" component={Messaging} />
         <Stack.Screen name="MessagingSearch" component={MessagingSearch} />
         <Stack.Screen name="Notifications" component={Notifications} />
@@ -37,7 +35,7 @@ export default function App() {
         <Stack.Screen name='SignUpStep2' component={SignUpStep2} />
         <Stack.Screen name='SignUpStep3' component={SignUpStep3} />
         <Stack.Screen name='SignUpStep4' component={SignUpStep4} />
-
+        <Stack.Screen name="MyTabs" component={MyTabs} />
       </Stack.Navigator>
     </NavigationContainer>
   )
