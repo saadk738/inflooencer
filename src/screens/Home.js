@@ -66,16 +66,15 @@ export default function Home({ navigation }) {
                     </View>
                 </View>
 
-                {/* <FlatList
+                <FlatList
                     horizontal
                     data={users}
                     renderItem={renderItem}
                     keyExtractor={item => item.id}
                     showsHorizontalScrollIndicator={false}
                     style={styles.storiesContainer}
-                /> */}
+                />
 
-                {/* Main content can go here */}
             </ScrollView>
         </SafeAreaView>
     )
