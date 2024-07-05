@@ -45,7 +45,9 @@ export default function SignUpStep4({ navigation }) {
 
 
                 <View >
-                    <Btn >Register</Btn>
+                    <Btn
+                        onPress={() => navigation.navigate('Home')}
+                    >Register</Btn>
                     {/* bottom text  */}
                     <View style={styles.bottomTextBox}>
                         <Text style={styles.subText}>

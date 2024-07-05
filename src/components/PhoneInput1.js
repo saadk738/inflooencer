@@ -32,6 +32,7 @@ export default function PhoneInput1() {
                     textInputStyle={styles.textInputStyle}
                     flagButtonStyle={styles.flagButtonStyle}
                     textContainerStyle={styles.textContainerStyle}
+                    codeTextStyle={styles.textInputStyle}
                 />
             </View>
         </>
@@ -57,16 +58,21 @@ const styles = StyleSheet.create({
     },
     flagButtonStyle: {
         backgroundColor: '#F3f3f3',
+
     },
     textContainerStyle: {
         backgroundColor: '#F3f3f3',
         justifyContent: 'center',
+        paddingVertical: 0,
+
+
     },
     textInputStyle: {
         color: 'black',
-        fontSize: 16,
-        zIndex: 22,
-    }
+        fontFamily: 'Gilroy-Regular',
+        fontSize: 14,
+    },
+
 
 
 })

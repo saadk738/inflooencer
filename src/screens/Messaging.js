@@ -214,10 +214,12 @@ const styles = StyleSheet.create({
     messageTextLeft: {
         fontSize: 16,
         color: acolors.black,
+        fontFamily: 'Gilroy-Regular'
     },
     messageTextRight: {
         fontSize: 16,
         color: '#FFF',
+        fontFamily: 'Gilroy-Regular'
     },
     audioMessageContainer: {
         alignSelf: 'flex-end',

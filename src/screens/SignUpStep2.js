@@ -4,8 +4,7 @@ import Btn from '../components/Btn'
 import globalStyles from '../styles/globalStyles'
 import Input from '../components/Input'
 import { acolors } from '../constants/colors'
-import PhoneInput from '../components/PhoneInput'
-import PhoneInput1 from '../components/PhoneInput'
+import PhoneInput1 from '../components/PhoneInput1'
 
 export default function SignUpStep2({ navigation }) {
     return (
@@ -31,6 +30,8 @@ export default function SignUpStep2({ navigation }) {
                         placeHolder='Email Address'
                     />
                     <PhoneInput1 />
+
+
 
 
                 </View>

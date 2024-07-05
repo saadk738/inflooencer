@@ -39,7 +39,7 @@ export default function Login({ navigation }) {
 
 
                 <Btn
-                    onPress={() => console.log('pressed')}
+                    onPress={() => navigation.navigate('Home')}
                     style={{ marginVertical: 30 }}
                 >Next</Btn>
 

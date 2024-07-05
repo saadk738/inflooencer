@@ -13,6 +13,7 @@ import SignUpStep4 from './src/screens/SignUpStep4'
 import Notifications from './src/screens/Notifications'
 import MessagingSearch from './src/screens/MessagingSearch'
 import Messaging from './src/screens/Messaging'
+import Home from './src/screens/Home'
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -23,10 +24,12 @@ export default function App() {
           headerShown: false
         }}
       >
+        <Stack.Screen name="Splash" component={Splash} />
+
+        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Messaging" component={Messaging} />
         <Stack.Screen name="MessagingSearch" component={MessagingSearch} />
         <Stack.Screen name="Notifications" component={Notifications} />
-        <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name='Onboard1' component={Onboard1} />
         <Stack.Screen name='Onboard2' component={Onboard2} />
         <Stack.Screen name='Login' component={Login} />
