@@ -68,18 +68,7 @@ export default function Login({ navigation }) {
                     </TouchableOpacity>
                 </View>
 
-                {/* bottom text  */}
-                <View style={styles.bottomTextBox1}>
-                    <Text style={styles.subText1}>
-                        By loggin in with Google, Apple, or Facebook, you accept inflooencer's
-                    </Text>
-                    <TouchableOpacity
-                        onPress={() => navigation.navigate('Login')}
-                        style={styles.subTextClickable1}
-                    >
-                        <Text style={styles.subTextClickable2}>Terms and Conditions and Privacy Policy</Text>
-                    </TouchableOpacity>
-                </View>
+
 
                 {/* bottom text  */}
                 <View style={styles.bottomTextBox}>
@@ -106,7 +95,7 @@ const styles = StyleSheet.create({
     logoImg: {
         width: 80,
         height: 80,
-        marginVertical: 70,
+        marginVertical: 30,
         alignSelf: 'center'
     },
     text: {
@@ -160,23 +149,4 @@ const styles = StyleSheet.create({
         fontFamily: 'Gilroy-Black',
         color: acolors.primary,
     },
-
-    subText1: {
-        fontSize: 14,
-        color: '#929292',
-        fontFamily: 'Gilroy-Regular',
-        // marginBottom: 20,
-        textAlign: 'center',
-        marginHorizontal: 20,
-    },
-    subTextClickable1: {
-        marginBottom: 20,
-    },
-    subTextClickable2: {
-        fontSize: 14,
-        fontFamily: 'Gilroy-Black',
-        color: acolors.black,
-        textAlign: 'center',
-    }
-
 })

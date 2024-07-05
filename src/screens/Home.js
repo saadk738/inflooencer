@@ -51,13 +51,13 @@ export default function Home({ navigation }) {
                                 style={styles.icon}
                             />
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => navigation.navigate('MessagingSearch')}>
+                        <TouchableOpacity onPress={() => []}>
                             <Image
                                 source={require('../assets/imgs/searchGroup.png')}
                                 style={styles.icon}
                             />
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => navigation.navigate('Messaging')}>
+                        <TouchableOpacity onPress={() => navigation.navigate('MessagingSearch')}>
                             <Image
                                 source={require('../assets/imgs/boardGroup.png')}
                                 style={styles.icon}

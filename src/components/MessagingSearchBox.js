@@ -1,10 +1,12 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { acolors } from '../constants/colors'
 
-export default function MessagingSearchBox({ img, name, content, time }) {
+export default function MessagingSearchBox({ img, name, content, onPress }) {
     return (
-        <View style={styles.container} >
+        <TouchableOpacity
+            onPress={onPress}
+            style={styles.container} >
             <View style={styles.upper}>
                 <Image
                     source={img ? img : require('../assets/imgs/p1.png')}
@@ -19,7 +21,7 @@ export default function MessagingSearchBox({ img, name, content, time }) {
                 <View style={styles.circle} />
             </View>
 
-        </View>
+        </TouchableOpacity>
     )
 }
 

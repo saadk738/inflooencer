@@ -117,7 +117,7 @@ export default function MessagingSearch({ navigation }) {
                                 key={i}
                                 img={e?.img}
                                 name={e?.name}
-
+                                onPress={() => navigation.navigate('Messaging')}
                             />
                         ))
                     }
