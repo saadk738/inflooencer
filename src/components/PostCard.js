@@ -187,11 +187,13 @@ const styles = StyleSheet.create({
         fontSize: 11,
         fontFamily: "Gilroy-Regular",
         marginTop: 8,
+        color: acolors.grey
     },
     btmName: {
         fontSize: 11,
         fontFamily: 'Gilroy-Bold',
         paddingRight: 5,
+        color: acolors.black
     }
 });
 

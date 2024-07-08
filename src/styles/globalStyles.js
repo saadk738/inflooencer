@@ -30,6 +30,11 @@ const globalStyles = StyleSheet.create({
         color: acolors.black,
     },
 
+    bBox: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
 
 });
 

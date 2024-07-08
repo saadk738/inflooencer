@@ -293,6 +293,7 @@ const styles = StyleSheet.create({
         width: 120,
         textAlign: 'center',
         fontFamily: 'Gilroy-Bold',
+        color: acolors.black,
         fontSize: 13,
         paddingBottom: 8,
     },
@@ -301,5 +302,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontFamily: 'Gilroy-Regular',
         fontSize: 13,
+        color: acolors.black
     }
 });
