@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Gilroy-Regular'
     },
     postTime: {
-        color: acolors.grey,
+        color: acolors.black,
         fontSize: 9,
         fontFamily: 'Gilroy-Regular',
         marginTop: 15,
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
     comments: {
         fontFamily: 'Gilroy-Regular',
         fontSize: 11,
-        color: acolors.grey,
+        color: acolors.black,
         marginVertical: 4,
     },
     footer: {
@@ -184,13 +184,14 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     btmTxt: {
-        fontSize: 11,
+        fontSize: 12,
         fontFamily: "Gilroy-Regular",
         marginTop: 8,
-        color: acolors.grey
+        color: acolors.black,
+        lineHeight: 15,
     },
     btmName: {
-        fontSize: 11,
+        fontSize: 12,
         fontFamily: 'Gilroy-Bold',
         paddingRight: 5,
         color: acolors.black

@@ -31,6 +31,10 @@ export default function Onboard2({ navigation }) {
                         <IconBtn
                             icon={require('../assets/imgs/apple.png')}
                             onPress={() => { }}
+                            iconStyle={{
+                                width: 19,
+                                height: 23,
+                            }}
                         >
                             Continue with Apple
                         </IconBtn>

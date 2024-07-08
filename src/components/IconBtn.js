@@ -2,13 +2,13 @@ import React from 'react'
 import { TouchableOpacity, Text, StyleSheet, Image } from 'react-native'
 import { acolors } from '../constants/colors'
 
-export default IconBtn = ({ onPress, children, icon }) => {
+export default IconBtn = ({ onPress, children, icon, iconStyle }) => {
     return (
         <TouchableOpacity
             style={[styles.Btn]}
             onPress={() => onPress()}
         >
-            <Image source={icon} style={styles.icon} />
+            <Image source={icon} style={iconStyle ?? styles.icon} />
             <Text style={styles.topsBtnTitle}>{children ?? 'Click Me'}</Text>
         </TouchableOpacity>
     )
