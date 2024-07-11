@@ -4,7 +4,7 @@ export const acolors = {
     white: "#ffffff",
     btnPrimary: "#ffa183",
     btnSecondry: "#ffa183",
-    grey: "#929292",
+    grey: "#757575",
     lighGrey: "#DADADA",
     primaryLight: '#5B4DBC',
     storyTitleContainerBg: 'rgba(91, 77, 188,0.7)',

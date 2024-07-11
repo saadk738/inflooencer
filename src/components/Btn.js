@@ -2,13 +2,13 @@ import React from 'react'
 import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 import { acolors } from '../constants/colors'
 
-export default Btn = ({ onPress, children, style }) => {
+export default Btn = ({ onPress, children, style, textStyle }) => {
     return (
         <TouchableOpacity
             style={[styles.tipsBtn, { ...style }]}
             onPress={onPress}
         >
-            <Text style={styles.topsBtnTitle}>{children}</Text>
+            <Text style={[styles.btnTitle, { ...textStyle }]}>{children}</Text>
         </TouchableOpacity>
     )
 }
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    topsBtnTitle: {
+    btnTitle: {
         color: 'white',
         fontFamily: 'Gilroy-Bold',
         fontSize: 19,

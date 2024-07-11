@@ -113,6 +113,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'white',
         padding: 20,
+        paddingVertical: 10,
     },
     headerLeft: {
         flexDirection: 'row',
