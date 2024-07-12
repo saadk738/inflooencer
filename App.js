@@ -17,6 +17,7 @@ import ProfileUser from './src/screens/ProfileUser'
 import Setting from './src/screens/Setting'
 import PersonalInformation from './src/screens/PersonalInformation'
 import PasswordSecurity from './src/screens/PasswordSecurity'
+import AddMedia from './src/screens/AddMedia'
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -38,6 +39,7 @@ export default function App() {
         <Stack.Screen name="Messaging" component={Messaging} />
         <Stack.Screen name="MessagingSearch" component={MessagingSearch} />
         <Stack.Screen name="Notifications" component={Notifications} />
+        <Stack.Screen name='AddMedia' component={AddMedia} />
         <Stack.Screen name='ProfileUser' component={ProfileUser} />
         <Stack.Screen name='Setting' component={Setting} />
         <Stack.Screen name='PersonalInformation' component={PersonalInformation} />

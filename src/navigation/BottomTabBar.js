@@ -79,7 +79,9 @@ const BottomTabBar = ({ state, descriptors, navigation }) => {
           </TouchableOpacity>
         );
       })}
-      <TouchableOpacity style={styles.addButtonOuter}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('AddMedia')}
+        style={styles.addButtonOuter}>
         <View style={styles.addButton} >
           <Text style={styles.addButtonText}>+</Text>
         </View>

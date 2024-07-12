@@ -3,9 +3,7 @@ import React, { useState } from 'react';
 import { acolors } from '../constants/colors';
 import Btn from '../components/Btn';
 
-const numColumns = 3;
-const screenWidth = Dimensions.get('window').width - 40;
-const imageWidth = screenWidth / numColumns;
+
 
 
 
@@ -33,6 +31,10 @@ export default function Profile({ navigation, route }) {
         { id: '15', source: require('../assets/imgs/extraImg7.png') },
         { id: '16', source: require('../assets/imgs/extraImg8.png') },
     ];
+
+    const numColumns = 3;
+    const screenWidth = Dimensions.get('window').width - 40;
+    const imageWidth = screenWidth / numColumns;
 
 
 
