@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     postTime: {
         color: acolors.black,
         fontSize: 9,
-        fontFamily: 'Gilroy-Regular',
+        fontFamily: 'Gilroy-Medium',
         marginTop: 15,
     },
     postImage: {
@@ -169,11 +169,11 @@ const styles = StyleSheet.create({
     likes: {
         color: acolors.primary,
         fontSize: 11,
-        fontFamily: 'Gilroy-Regular',
+        fontFamily: 'Gilroy-SemiBold',
         marginTop: 3
     },
     comments: {
-        fontFamily: 'Gilroy-Regular',
+        fontFamily: 'Gilroy-Medium',
         fontSize: 11,
         color: acolors.black,
         marginVertical: 4,

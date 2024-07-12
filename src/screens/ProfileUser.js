@@ -10,7 +10,7 @@ const imageWidth = screenWidth / numColumns;
 
 
 
-export default function Profile({ navigation, route }) {
+export default function ProfileUser({ navigation, route }) {
 
     const [active, setActive] = useState('Posts')
 
@@ -90,13 +90,18 @@ export default function Profile({ navigation, route }) {
                     <Text style={styles.heading1} >Daniel Cavil</Text>
                     <Text style={[styles.text, { marginBottom: 25, }]} >Passionate tech enthusiast and avid traveler. Exploring the intersection of technology and creativity. Always eager to learn, innovate, and connect with like-minded individuals. Let's create something amazing together!</Text>
 
-                    {/* control btn  */}
 
-                    <Btn
-                        onPress={() => navigation.navigate('Setting')}
-                        style={styles.btn1}
-                        textStyle={styles.btn1Text}
-                    >Edit Profile</Btn>
+                    {/* control btns  */}
+                    <View style={styles.btnsBox}>
+                        <Btn
+                            style={styles.btn1}
+                            textStyle={styles.btn1Text}
+                        >Follow</Btn>
+                        <Btn
+                            style={styles.btn2}
+                            textStyle={styles.btn2Text}
+                        >Message</Btn>
+                    </View>
 
 
                 </View>
