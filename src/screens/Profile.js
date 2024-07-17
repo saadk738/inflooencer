@@ -95,7 +95,6 @@ export default function Profile({ navigation, route }) {
                     {/* control btn  */}
 
                     <Btn
-                        onPress={() => navigation.navigate('Setting')}
                         style={styles.btn1}
                         textStyle={styles.btn1Text}
                     >Edit Profile</Btn>

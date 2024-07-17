@@ -96,10 +96,14 @@ export default function Home({ navigation }) {
             {/* Header  */}
             <View style={styles.header}>
                 <View style={styles.headerLeft}>
-                    <Image
-                        source={require('../assets/imgs/logoDarkBg.png')}
-                        style={styles.img}
-                    />
+                    <TouchableOpacity
+                        onPress={() => navigation.openDrawer()}
+                    >
+                        <Image
+                            source={require('../assets/imgs/logoDarkBg.png')}
+                            style={styles.img}
+                        />
+                    </TouchableOpacity>
                     <View>
                         <Text style={styles.text}>Welcome</Text>
                         <Text style={styles.heading1}>Daniel Cavil</Text>

@@ -43,7 +43,7 @@ export default function Login({ navigation }) {
 
 
                 <Btn
-                    onPress={() => navigation.navigate('MyTabs')}
+                    onPress={() => navigation.navigate('MyDrawer')}
                     style={{ marginVertical: 30 }}
                 >Next</Btn>
 

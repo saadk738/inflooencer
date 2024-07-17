@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React from 'react'
 import Splash from './src/screens/Splash'
 import Onboard1 from './src/screens/Onboard1'
@@ -12,12 +13,12 @@ import SignUpStep4 from './src/screens/SignUpStep4'
 import Notifications from './src/screens/Notifications'
 import MessagingSearch from './src/screens/MessagingSearch'
 import Messaging from './src/screens/Messaging'
-import MyTabs from './src/navigation/MyTabs'
 import ProfileUser from './src/screens/ProfileUser'
-import Setting from './src/screens/Setting'
 import PersonalInformation from './src/screens/PersonalInformation'
 import PasswordSecurity from './src/screens/PasswordSecurity'
 import AddMedia from './src/screens/AddMedia'
+import MyDrawer from './src/navigation/MyDrawer';
+
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -41,11 +42,12 @@ export default function App() {
         <Stack.Screen name="Notifications" component={Notifications} />
         <Stack.Screen name='AddMedia' component={AddMedia} />
         <Stack.Screen name='ProfileUser' component={ProfileUser} />
-        <Stack.Screen name='Setting' component={Setting} />
         <Stack.Screen name='PersonalInformation' component={PersonalInformation} />
         <Stack.Screen name='PasswordSecurity' component={PasswordSecurity} />
-
-        <Stack.Screen name="MyTabs" component={MyTabs} />
+        {/* navigation   */}
+        {/* <Stack.Screen name="MyTabs" component={MyTabs} /> */}
+        {/* <Stack.Screen name="MyDrawer" component={MyDrawer} /> */}
+        <Stack.Screen name="MyDrawer" component={MyDrawer} />
       </Stack.Navigator>
     </NavigationContainer>
   )
