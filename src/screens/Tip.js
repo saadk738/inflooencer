@@ -26,8 +26,8 @@ export default function Tip({ navigation }) {
     }
     return (
         <SafeAreaView>
-            <View style={[globalStyles.bgContainer, styles.container]} >
-                <ScrollView>
+            <ScrollView style={globalStyles.bgContainer} >
+                <View>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <Image
                             source={require('../assets/imgs/backIcon2.png')}
@@ -66,7 +66,6 @@ export default function Tip({ navigation }) {
                         value={val}
                         multiline
                         onChangeText={(e) => setVal(e)}
-                        style={{ minHeight: 100 }}
                     />
 
                     <Text style={styles.amountLabel} >Enter Amount</Text>
@@ -100,28 +99,29 @@ export default function Tip({ navigation }) {
                         </TouchableOpacity>
                     </View>
 
+
+
+                    <View style={styles.bottom} >
+                        <SlideToConfirm
+                            onConfirm={() => console.log('confirmed 1')}
+                        />
+                    </View>
+
                     <View style={{ height: 50 }} />
-
-                </ScrollView>
-
-
-                <View style={styles.bottom}>
-                    <SlideToConfirm
-                        onConfirm={() => console.log('confirmed 1')}
-                    />
 
                 </View>
 
 
-            </View>
+
+
+
+            </ScrollView>
         </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
-    container: {
-        justifyContent: 'space-between'
-    },
+
     heading: {
         fontFamily: "Gilroy-Bold",
         fontSize: 28,
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Gilroy-SemiBold',
         fontSize: 12,
         color: '#A8A8A8',
-        marginTop: 20,
+        marginTop: 10,
         textAlign: 'center',
         marginBottom: 10,
     },
@@ -210,17 +210,17 @@ const styles = StyleSheet.create({
     },
     points: {
         fontFamily: "Gilroy-Bold",
-        fontSize: 26,
+        fontSize: 28,
         color: '#AAAAAA',
         marginLeft: 10,
     },
     bottom: {
-        marginBottom: 30
+        marginTop: 30
     },
     btnsBox: {
         flexDirection: 'row',
         flexWrap: 'wrap',
-        marginTop: 40,
+        marginTop: 20,
     },
     btn: {
         width: screenWidth / 3,
