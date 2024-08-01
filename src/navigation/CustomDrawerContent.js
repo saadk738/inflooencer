@@ -49,6 +49,7 @@ const CustomDrawerContent = ({ navigation, ...props }) => {
                 <View style={styles.profile}>
                     <TouchableOpacity
                         style={styles.cross}
+                        onPress={() => navigation.closeDrawer()}
                     >
                         <Image source={require('../assets/imgs/crossPrimary.png')}
                             style={styles.crossImg}

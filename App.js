@@ -18,6 +18,7 @@ import PersonalInformation from './src/screens/PersonalInformation'
 import PasswordSecurity from './src/screens/PasswordSecurity'
 import AddMedia from './src/screens/AddMedia'
 import MyDrawer from './src/navigation/MyDrawer';
+import Tip from './src/screens/Tip';
 
 
 export default function App() {
@@ -44,9 +45,7 @@ export default function App() {
         <Stack.Screen name='ProfileUser' component={ProfileUser} />
         <Stack.Screen name='PersonalInformation' component={PersonalInformation} />
         <Stack.Screen name='PasswordSecurity' component={PasswordSecurity} />
-        {/* navigation   */}
-        {/* <Stack.Screen name="MyTabs" component={MyTabs} /> */}
-        {/* <Stack.Screen name="MyDrawer" component={MyDrawer} /> */}
+        <Stack.Screen name="Tip" component={Tip} />
         <Stack.Screen name="MyDrawer" component={MyDrawer} />
       </Stack.Navigator>
     </NavigationContainer>

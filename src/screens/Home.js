@@ -166,6 +166,7 @@ export default function Home({ navigation }) {
                             userCommentDate={post.userCommentDate}
                             userCommentImg={post.userCommentImg}
                             userCommentTime={post.userCommentTime}
+                            onSendTip={() => navigation.navigate('Tip')}
                         />
                     ))}
                 </View>

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { acolors } from '../constants/colors';
 
-const PostCard = ({ profileImage, username, postTime, postImage, likes, comments }) => {
+const PostCard = ({ profileImage, username, postTime, postImage, likes, comments, onSendTip }) => {
     return (
         <View style={styles.card}>
             <View style={styles.header}>
@@ -45,7 +45,9 @@ const PostCard = ({ profileImage, username, postTime, postImage, likes, comments
                         />
                     </TouchableOpacity>
                 </View>
-                <TouchableOpacity style={styles.sendTip} >
+                <TouchableOpacity
+                    onPress={onSendTip}
+                    style={styles.sendTip} >
                     <Image
                         style={styles.sendTipImg}
                         source={require('../assets/imgs/dollar.png')} />
